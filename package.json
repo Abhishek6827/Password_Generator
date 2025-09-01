@@ -8,19 +8,18 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-toastify": "^10.0.5",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://abhishek6827.github.io/Password_Generator",
-
+  "homepage": "https://Abhishek6827.github.io/Password_Generator",
   "scripts": {
-     "start": "react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
