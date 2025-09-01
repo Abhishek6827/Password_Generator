@@ -1,35 +1,63 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
+
 body {
   background-color: rgb(43, 43, 72);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 1rem;
 }
 
 .passwordBox {
-  width: 350px;
+  width: 100%;
+  max-width: 400px; /* max width for larger screens */
   padding: 20px;
   background-color: blueviolet;
-  /* height: 300px; */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.passwordBox h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #fff;
 }
 
 .passwordBoxin {
   display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .passwordBoxin input {
-  flex-basis: 80%;
-  padding-left: 5px;
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
 }
 
 .passwordBoxin button {
-  flex-basis: 20%;
+  flex-basis: 30%;
   padding: 10px 0px;
+  border-radius: 6px;
+  border: none;
+  background-color: #fff;
+  color: blueviolet;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.passwordBoxin button:hover {
+  background-color: #f0e6ff;
 }
 
 .passLength {
@@ -37,20 +65,73 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .passLength label {
-  flex-basis: 80%;
+  flex-basis: 65%;
+  color: #fff;
+  font-size: 0.95rem;
 }
 
-.passLength input {
-  padding: 10px 0px;
-  width: 60px;
-  flex-basis: 20%;
+.passLength input[type="number"] {
+  flex-basis: 30%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+.passLength input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .btn {
   width: 100%;
-  padding: 10px 0px; 
+  padding: 12px 0px;
+  margin-top: 15px;
   cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  background-color: #fff;
+  color: blueviolet;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #f0e6ff;
+}
+
+@media (max-width: 480px) {
+  .passwordBox {
+    padding: 15px;
+  }
+
+  .passwordBoxin input {
+    font-size: 0.9rem;
+  }
+
+  .passwordBoxin button {
+    font-size: 0.9rem;
+    padding: 8px 0;
+  }
+
+  .passLength label {
+    font-size: 0.85rem;
+    flex-basis: 60%;
+  }
+
+  .passLength input[type="number"] {
+    font-size: 0.9rem;
+    flex-basis: 35%;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 0px;
+  }
 }
